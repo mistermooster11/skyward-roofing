@@ -926,10 +926,108 @@ export const servicePages: Record<string, ServicePageData> = {
       },
     ],
     relatedServices: [
-      { label: "Flat Roofing",         href: "/craft-catalog/flat-roofing"        },
-      { label: "Commercial Roofing",   href: "/craft-catalog/commercial-roofing"  },
-      { label: "Roof Inspections",     href: "/craft-catalog/roof-inspections"    },
-      { label: "Metal Roofing",        href: "/craft-catalog/metal-roofing"       },
+      { label: "Flat Roofing",              href: "/craft-catalog/flat-roofing"             },
+      { label: "Commercial Roofing",        href: "/craft-catalog/commercial-roofing"       },
+      { label: "Roof Inspections",          href: "/craft-catalog/roof-inspections"         },
+      { label: "Waterproofing Basements",   href: "/craft-catalog/waterproofing-basements"  },
+    ],
+  },
+
+  /* ─── WATERPROOFING BASEMENTS ─────────────────────────────────────────── */
+  "waterproofing-basements": {
+    title: "Waterproofing Basements",
+    bgColor: "#101d2b",
+    navItems: [
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
+    ],
+    overviewContent: (
+      <>
+        <p>
+          Basement water infiltration is one of the most common — and most
+          damaging — problems homeowners in New York City face. Whether you
+          have visible seepage through block or poured concrete walls, efflorescence
+          (white mineral deposits), dampness after rain, or a chronic musty odor,
+          Skyward Roofing provides interior and exterior basement waterproofing
+          solutions that address the root cause.
+        </p>
+        <p>
+          We apply coatings and sealants rated for below-grade applications that
+          stop moisture migration from the outside in. Call us at{" "}
+          <a href="tel:9179798704">(917) 979-8704</a> for a free inspection and
+          written estimate.
+        </p>
+      </>
+    ),
+    overviewQuickLinks: [
+      { label: "Call (917) 979-8704", href: "tel:9179798704" },
+      { label: "Contact Us Online",   href: "/contact-us"    },
+    ],
+    sections: [
+      {
+        id: "when_you_need_it",
+        heading: "Signs Your Basement Needs Waterproofing",
+        content: (
+          <>
+            <p>
+              Water in a basement rarely announces itself dramatically. More often
+              it shows up as damp walls after heavy rain, a persistent musty smell,
+              white chalky deposits on concrete or block, rust stains around
+              floor drains, or paint that peels and bubbles on below-grade walls.
+              Left unaddressed, basement moisture leads to mold growth, damaged
+              framing, deteriorated insulation, and reduced property value.
+            </p>
+            <p>
+              If your basement has experienced any of these symptoms — even
+              intermittently — a waterproofing assessment is worthwhile. Many
+              moisture problems can be stopped with the right coating system
+              before they require expensive structural repair.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "our_process",
+        heading: "Our Process",
+        content: (
+          <>
+            <p>
+              <strong>Step 1 — Free Inspection.</strong> We assess the basement
+              walls, floor, and any visible cracks or joint failures to determine
+              the source and extent of moisture intrusion.
+            </p>
+            <p>
+              <strong>Step 2 — Written Estimate.</strong> We provide a clear,
+              itemized estimate before any work begins. No surprises.
+            </p>
+            <p>
+              <strong>Step 3 — Surface Preparation.</strong> We clean the
+              affected surfaces, address any active cracks with hydraulic cement
+              or appropriate filler, and prepare the substrate for proper
+              waterproofing adhesion.
+            </p>
+            <p>
+              <strong>Step 4 — Waterproofing Application.</strong> We apply
+              a professional-grade waterproofing membrane or coating rated for
+              below-grade use, ensuring complete coverage across walls and
+              floor-wall joints where infiltration most commonly occurs.
+            </p>
+            <p>
+              <strong>Step 5 — Final Inspection.</strong> We walk you through
+              the completed work and provide guidance on any drainage or grading
+              improvements that would complement the waterproofing.
+            </p>
+          </>
+        ),
+      },
+    ],
+    relatedServices: [
+      { label: "Roof Coatings & Waterproofing", href: "/craft-catalog/roof-coatings"          },
+      { label: "Residential Roofing",           href: "/craft-catalog/residential-roofing"    },
+      { label: "Roof Inspections",              href: "/craft-catalog/roof-inspections"       },
+      { label: "Gutter Services",               href: "/craft-catalog/gutter-services"        },
     ],
   },
 };

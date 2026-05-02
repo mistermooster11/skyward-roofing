@@ -88,6 +88,14 @@ export const crafts: CraftItem[] = [
     hasAssessment: false,
     hasTranslation: false,
   },
+  {
+    slug: "waterproofing-basements",
+    title: "Waterproofing Basements",
+    categories: ["Residential", "Commercial"],
+    disciplines: ["Repairs", "Maintenance"],
+    hasAssessment: false,
+    hasTranslation: false,
+  },
 ];
 
 export const CATEGORIES = [
