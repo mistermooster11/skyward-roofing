@@ -3,33 +3,29 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { useInView } from "framer-motion";
 
-// TODO: Replace placeholder reviews with real Google reviews from Pipe Monkeys.
-// Daniel Pipitone is confirmed real. The others are placeholders — request from client.
 const testimonials = [
   {
-    id: "daniel-pipitone",
+    id: "peter-robinson",
     quote:
-      "Professional service with a very fair price. They send you info about the assigned technician in advance and showed up exactly on time. They cleaned up nicely after snaking a drain line on the 2nd floor of a 3 story building. Forget Roto Rooter — Pipe Monkeys will be my new go-to for plumbing needs.",
-    name: "Daniel Pipitone",
-    position: "Brooklyn Homeowner",
+      "I own a construction company and we regularly sub out work to Skyward Roofing because they are always reliable and I don't have to check behind them. If you are looking for your own sub contractor for large jobs or just need roof work you can't go wrong with the guys at Skyward.",
+    name: "Peter Robinson",
+    position: "Construction Company Owner",
     platform: "Google Review ★★★★★",
   },
   {
-    id: "maria-santos",
-    // TODO: Replace with a real Google review from client
+    id: "brice-jamie-king",
     quote:
-      "Called at 9am with a completely backed up kitchen drain. Tech was here by 11, cleared it in under an hour. He explained exactly what caused the clog and how to prevent it. Pricing was upfront and fair — no pushing extras I didn't need. Will absolutely use them again.",
-    name: "Maria Santos",
-    position: "Queens Homeowner",
+      "Our experience with Skyward Roofing was flawless. Bob explained everything we needed, knocked out the project in no time and inspected his crew's work throughout the process. The price was fantastic as well. We have referred them to several other business owners and will continue to do so.",
+    name: "Brice & Jamie King",
+    position: "NYC Property Owners",
     platform: "Google Review ★★★★★",
   },
   {
-    id: "james-oconnor",
-    // TODO: Replace with a real Google review from client
+    id: "jordan-wells",
     quote:
-      "Had a main line backup that two other companies couldn't fully clear. Pipe Monkeys came the same afternoon, ran a camera first so we could see exactly what was in there, then jetted it clean. You could see the difference on the camera footage after. Highly recommend for any serious sewer issue.",
-    name: "James O'Connor",
-    position: "Nassau County Homeowner",
+      "As a contractor myself, I know when other contractors do a great job and when they take shortcuts. Skyward Roofing is one of the good ones. They re-roofed my warehouse that I use to house my asphalt equipment. Their crew was in and out in no time and did a fantastic job — and the price was fantastic. I would (and do) recommend them to people when they ask.",
+    name: "Jordan Wells",
+    position: "Commercial Property Owner",
     platform: "Google Review ★★★★★",
   },
 ];
@@ -166,20 +162,20 @@ export default function Testimonial() {
     return () => clearInterval(id);
   }, [go]);
 
-  // Slide height estimate — enough for the longest quote
-  const SLIDE_HEIGHT = "28rem";
+  // Slide height — long quotes need more room
+  const SLIDE_HEIGHT = "32rem";
 
   return (
     <div ref={ref} className="front-testimonial ia-bg-dark">
       <div className="inner inner--slim-1172">
         <div className={`sub-heading sub-heading__white fadeInUpS wow${vis}`}>
-          What Our Customers Say
+          What Our Clients Say
         </div>
         <h2
           className={`h3 ia-white fadeInUpS wow${vis}`}
           style={{ animationDelay: "0.1s" }}
         >
-          Real Reviews From Real Neighbors
+          Real Reviews From Real Property Owners
         </h2>
       </div>
 

@@ -22,8 +22,8 @@ export async function generateMetadata({
   const data = servicePages[slug];
   if (!data) return {};
   return {
-    title: `${data.title} — Pipe Monkeys`,
-    description: `Professional ${data.title.toLowerCase()} service in Brooklyn, Queens, and Nassau County. Upfront pricing, same-day scheduling, guaranteed results.`,
+    title: `${data.title} — Skyward Roofing`,
+    description: `Professional ${data.title.toLowerCase()} services across New York City and Westchester. Licensed, insured, free inspections available. Call (917) 979-8704.`,
   };
 }
 
@@ -84,12 +84,12 @@ export default async function ServiceDetailPage({
               <div className="inner">
                 <div className="content-entry p3">
                   <p>
-                    <strong>Ready to book?</strong>{" "}
+                    <strong>Ready to get started?</strong>{" "}
                     Call{" "}
-                    <a href="tel:7187491830">(718) 749-1830</a>{" "}
-                    for same-day scheduling, or{" "}
+                    <a href="tel:9179798704">(917) 979-8704</a>{" "}
+                    for a free inspection and written estimate, or{" "}
                     <a href="/contact-us">send us a message online</a>.
-                    We give you a price before we start — no surprises.
+                    We assess your roof honestly — no pressure, no surprises.
                   </p>
                 </div>
               </div>
@@ -100,9 +100,9 @@ export default async function ServiceDetailPage({
             <RelatedCrafts
               description={
                 <p>
-                  Pipe Monkeys handles every type of drain and sewer problem
-                  across Brooklyn, Queens, and Nassau County. Explore our other
-                  services below.
+                  Skyward Roofing handles every type of roofing project across
+                  all five NYC boroughs and Westchester County. Explore our
+                  other services below.
                 </p>
               }
               crafts={data.relatedServices}

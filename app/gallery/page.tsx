@@ -8,63 +8,63 @@ import { useInView } from "framer-motion";
 const galleryItems = [
   {
     id: "gallery-1",
-    label: "Main Sewer Line — Crown Heights, Brooklyn",
-    beforeAlt: "Blocked main sewer line before clearing",
-    afterAlt:  "Clear main sewer line after hydro jetting",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/IMG_9688-1024x682.jpg",
-    after:  "/images/IMG_9750-1024x683.jpg",
-    category: "Main Sewer Line",
+    label: "Asphalt Shingle Replacement — Bronx",
+    beforeAlt: "Worn asphalt shingle roof with missing and curling shingles before replacement",
+    afterAlt:  "New asphalt shingle roof installed by Skyward Roofing",
+    // Real before/after from skywardroofing.com
+    before: "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/before1_orig.jpg",
+    after:  "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/after-1_orig.jpg",
+    category: "Asphalt Shingles",
   },
   {
     id: "gallery-2",
-    label: "Kitchen Drain — Astoria, Queens",
-    beforeAlt: "Grease-clogged kitchen drain before clearing",
-    afterAlt:  "Kitchen drain fully cleared and flowing",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/iStock-530983109-1.jpg",
-    after:  "/images/IMG_9688-1024x682.jpg",
-    category: "Kitchen Sink",
+    label: "Shingle Roof — Detail Around Penetrations",
+    beforeAlt: "Worn shingles around roof protrusions before service",
+    afterAlt:  "Pristine new shingles installed cleanly around penetrations",
+    // Real before/after from skywardroofing.com
+    before: "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/before2_orig.jpg",
+    after:  "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/after2_orig.jpg",
+    category: "Asphalt Shingles",
   },
   {
     id: "gallery-3",
-    label: "Hydro Jetting — Nassau County Home",
-    beforeAlt: "Pipe interior with grease buildup",
-    afterAlt:  "Clean pipe interior after hydro jetting",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/IMG_9750-1024x683.jpg",
-    after:  "/images/iStock-530983109-1.jpg",
-    category: "Hydro Jetting",
+    label: "Slate Roof — NYC Residence",
+    beforeAlt: "Completed slate roof with two dormers and chimney by Skyward Roofing",
+    afterAlt:  "Skyward Roofing completed slate roof project",
+    // Real project photos from skywardroofing.com
+    before: "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/img-4442-1.jpeg",
+    after:  "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/img-4442-1.jpeg",
+    category: "Slate Roofing",
   },
   {
     id: "gallery-4",
-    label: "Tub Drain — Bay Ridge, Brooklyn",
-    beforeAlt: "Hair-clogged tub drain before clearing",
-    afterAlt:  "Tub drain cleared with no damage to tile",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/IMG_9688-1024x682.jpg",
-    after:  "/images/IMG_9750-1024x683.jpg",
-    category: "Tub & Shower",
+    label: "Flat Roof Coating — Commercial Property",
+    beforeAlt: "Commercial flat roof before coating application",
+    afterAlt:  "Commercial flat roof after Skyward Roofing coating",
+    // Real project photos from skywardroofing.com
+    before: "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/skywardroofingbrandedspfjob_orig.png",
+    after:  "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/skywardroofingroofcoatings_orig.png",
+    category: "Flat Roof / Coating",
   },
   {
     id: "gallery-5",
-    label: "Camera Inspection — Multi-Unit, Flushing",
-    beforeAlt: "Camera view showing root intrusion in sewer line",
-    afterAlt:  "Cleared line confirmed via camera after service",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/iStock-530983109-1.jpg",
-    after:  "/images/IMG_9688-1024x682.jpg",
-    category: "Camera Inspection",
+    label: "Residential Roof Replacement — NYC",
+    beforeAlt: "Residential roof before replacement",
+    afterAlt:  "New shingle roof installed by Skyward Roofing",
+    // Real project photos from skywardroofing.com
+    before: "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/skyward-roofing-service-nyc-orig.jpg",
+    after:  "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/just-finished-roof-skyward-roofing-ny-orig.jpg",
+    category: "Residential Roofing",
   },
   {
     id: "gallery-6",
-    label: "Toilet Clog — Levittown, Nassau",
-    beforeAlt: "Overflowing toilet before service",
-    afterAlt:  "Toilet fully cleared and flushing cleanly",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/IMG_9750-1024x683.jpg",
-    after:  "/images/iStock-530983109-1.jpg",
-    category: "Toilet",
+    label: "Mansard Roof Re-Roofing — NYC Brownstone",
+    beforeAlt: "Brownstone with mansard roof before re-roofing",
+    afterAlt:  "Completed mansard re-roof by Skyward Roofing",
+    // Real project photos from skywardroofing.com
+    before: "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/bbranton-image4-orig.jpeg",
+    after:  "https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/bbranton-image5-orig.jpeg",
+    category: "Residential Roofing",
   },
 ];
 
@@ -110,7 +110,6 @@ function GalleryCard({ item, delay }: { item: typeof galleryItems[number]; delay
               aria-label={item.beforeAlt}
             />
             <p className="p3 ia-dark" style={{ marginTop: "0.5rem", textAlign: "center", fontWeight: 600 }}>Before</p>
-            {/* [TODO: swap image — before photo] */}
           </div>
           <div>
             <div
@@ -124,7 +123,6 @@ function GalleryCard({ item, delay }: { item: typeof galleryItems[number]; delay
               aria-label={item.afterAlt}
             />
             <p className="p3 ia-dark" style={{ marginTop: "0.5rem", textAlign: "center", fontWeight: 600 }}>After</p>
-            {/* [TODO: swap image — after photo] */}
           </div>
         </div>
 
@@ -170,9 +168,10 @@ export default function GalleryPage() {
               <div className={`sub-heading fadeInUpS wow${heroVis}`}>Real Results</div>
               <div className={`content-entry fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
                 <p>
-                  Every job below was done by a Pipe Monkeys tech in Brooklyn, Queens, or Nassau
-                  County. These are real lines, real homes, and real results — no stock photos.
-                  {/* [TODO: Replace placeholder images with actual job photos from client] */}
+                  A sample of completed projects by Skyward Roofing across New
+                  York City — residential roofs, commercial flat roofs, slate,
+                  shingles, mansard, and more. Every project is documented and
+                  every result is backed by our workmanship.
                 </p>
               </div>
             </div>
@@ -183,9 +182,9 @@ export default function GalleryPage() {
               </div>
               <ul className="quick-links" role="list">
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
-                  <a className="ia-link ia-link--arrow" href="tel:7187491830">
+                  <a className="ia-link ia-link--arrow" href="tel:9179798704">
                     <i className="icon-link" />
-                    <span>Call (718) 749-1830</span>
+                    <span>Call (917) 979-8704</span>
                   </a>
                 </li>
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.2s" }}>
@@ -197,7 +196,7 @@ export default function GalleryPage() {
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.3s" }}>
                   <a className="ia-link ia-link--arrow" href="/contact-us">
                     <i className="icon-link" />
-                    <span>Schedule Service</span>
+                    <span>Free Estimate</span>
                   </a>
                 </li>
               </ul>
@@ -216,15 +215,16 @@ export default function GalleryPage() {
             className={`h3 fadeInUpS wow${gridInView ? " is-visible" : ""}`}
             style={{ animationDelay: "0.1s" }}
           >
-            Recent Jobs
+            Recent Projects
           </h2>
           <div
             className={`content-entry fadeInUpS wow${gridInView ? " is-visible" : ""}`}
             style={{ animationDelay: "0.2s" }}
           >
             <p>
-              Scroll through clogs we&apos;ve cleared across the area. From grease-packed kitchen
-              lines to root-choked main sewers — we document our work and stand behind every job.
+              From asphalt shingle replacements in the Bronx to slate re-roofs
+              and flat roof coatings across all five boroughs — every job is
+              done right and documented from start to finish.
             </p>
           </div>
           <div className="user-grid-list user-grid-list--small">
@@ -242,22 +242,23 @@ export default function GalleryPage() {
       >
         <div className="inner inner--slim-1172">
           <div className={`sub-heading wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.1s" }}>
-            Ready to Clear Your Drain?
+            Ready to Get Started?
           </div>
           <h2 className={`h2 wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
-            Same-Day Service Available
+            Free Inspection — No Obligation
           </h2>
           <div className={`front-donation__in wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
             <div className="content-entry">
               <p>
-                Call <strong>(718) 749-1830</strong> — we&apos;ll give you an honest price
-                before we start, and we won&apos;t leave until the job is done right.
+                Call <strong>(917) 979-8704</strong> and we&apos;ll schedule a
+                free inspection and written estimate. No pressure, no
+                obligation — just an honest assessment of your roof.
               </p>
             </div>
             <div className="front-donation__btn-wrap">
               <div className="front-donation__btn">
-                <a className="btn btn--primary" href="tel:7187491830">
-                  Call (718) 749-1830
+                <a className="btn btn--primary" href="tel:9179798704">
+                  Call (917) 979-8704
                 </a>
               </div>
             </div>

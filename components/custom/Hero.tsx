@@ -27,7 +27,7 @@ export default function Hero() {
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full',
             ].join(' ')}
           >
-            Brooklyn, Queens &amp; Nassau County Drain Clearing
+            NYC&apos;s Trusted Roofing Contractor — 50+ Years of Family Experience
           </h1>
 
           <div className="flex justify-start pb-20 max-[767px]:block max-[767px]:pb-8">
@@ -41,15 +41,16 @@ export default function Hero() {
               ].join(' ')}
             >
               <p className="text-[1.9rem] leading-[1.6]">
-                From sinks to main lines, we clear tough clogs across Brooklyn,
-                Queens and Nassau County with pro gear and zero stress.
-                Upfront pricing. Family owned. Local NYC techs.
+                Third-generation, family-owned roofing company serving the Bronx,
+                Brooklyn, Manhattan, Queens, Staten Island, and Yonkers. Free
+                inspections. Licensed, bonded &amp; insured. 20-year material
+                warranty available.
               </p>
             </div>
 
             <PrimaryButton
-              label="Call (718) 749-1830"
-              href="tel:7187491830"
+              label="Call (917) 979-8704"
+              href="tel:9179798704"
               dark
               wow
               visible={visible}
@@ -108,20 +109,11 @@ export default function Hero() {
                   visible ? 'h-full scale-100' : 'h-0 scale-[1.2]',
                 ].join(' ')}
               >
-                {/* TODO: Replace src with a Pipe Monkeys hero image or video */}
-                <video
-                  loop
-                  autoPlay
-                  muted
-                  playsInline
-                  preload="none"
-                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto max-w-[200%]"
-                >
-                  <source
-                    src="https://www.nccer.org/media/2023/03/Hero-Website-Video-3.mp4"
-                    type="video/mp4"
-                  />
-                </video>
+                {/* [TODO: Replace with a Skyward Roofing hero photo or video — drone shot of NYC roof work ideal] */}
+                <div
+                  className="absolute left-0 top-0 w-full h-full"
+                  style={{ backgroundColor: '#0d1b2a' }}
+                />
               </div>
             </div>
 

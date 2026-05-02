@@ -3,22 +3,22 @@ import VapeImage from "./VapeImage";
 
 const stats = [
   {
-    stat: "Same-Day",
-    label: "Scheduling Available 7 Days a Week",
-    linkText: "Book Service",
-    href: "/contact-us",
+    stat: "50+",
+    label: "Combined Years of Family Roofing Experience in NYC",
+    linkText: "About Us",
+    href: "/explore/skyward-roofing",
   },
   {
-    stat: "4.9★",
-    label: "Average Rating — 100+ Google Reviews",
-    linkText: "See Reviews",
-    href: "https://www.google.com/maps/search/Pipe+Monkeys",
+    stat: "20-yr",
+    label: "Material Warranty Available on Qualifying Installations",
+    linkText: "Our Services",
+    href: "/craft-catalog",
   },
   {
     stat: "100%",
-    label: "Upfront Pricing — You Approve Before We Start",
-    linkText: "How It Works",
-    href: "/#how-it-works",
+    label: "Free Inspections — No Obligation, Every Time",
+    linkText: "Schedule Now",
+    href: "/contact-us",
   },
 ];
 
@@ -32,9 +32,9 @@ export default function Difference() {
 
           {/* Left: heading + first stat */}
           <div className="flex-1">
-            <div className="sub-heading">Why Pipe Monkeys</div>
+            <div className="sub-heading">Why Skyward Roofing</div>
             <h2 className="h1 mb-[3rem]">
-              Local Pros You Can Actually Count On
+              Third-Generation Roofers Who Stand Behind Every Job
             </h2>
             <div className="hidden md:flex flex-wrap gap-[3rem] py-[2rem]">
               <NumberStatsItem item={stats[0]} />
@@ -44,7 +44,7 @@ export default function Difference() {
           {/* Right: photo */}
           <div className="w-full md:w-[54%] shrink-0 relative z-20">
             <div className="front-difference__image">
-              {/* [TODO: Replace with Pipe Monkeys job site or team photo] */}
+              {/* [TODO: Replace with a Skyward Roofing crew or completed job photo] */}
               <VapeImage src="/images/IMG_9750-1024x683.jpg" />
             </div>
           </div>

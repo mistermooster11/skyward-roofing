@@ -1,127 +1,106 @@
-# Pipe Monkeys — Content Brief
+# Skyward Roofing — Content Brief
 **QuickFlip Sites | Build Log**
-Date: April 2026
-Prospect: pipemonkeys.com (Brooklyn, Queens & Nassau County drain/sewer)
-Template: NCCER clone (Next.js 14 App Router)
-Reference site: apexroofingpro.com
+Date: May 2, 2026
+Prospect: https://www.skywardroofing.com/
+Template: PipeMonkey-Redesign (Next.js 16 App Router)
+Reference site: N/A — Skyward's site had sufficient structure
 
 ---
 
 ## Source Material Summary
 
-Pipe Monkeys' existing site is a **single-page WordPress build** — no subpages, no blog, no gallery. All content was pulled from that one page and distributed across the template's 7-page structure. Key details extracted:
+**Business Name:** Skyward Roofing
+**Phone:** (917) 979-8704
+**Primary License:** NYC DCA — 2100010
+**Secondary License:** Westchester County — WC-36220-H23
+**Service Area:** All five NYC boroughs + Yonkers and surrounding Westchester communities
+**Years in Business:** 50+ combined years (family business, 3rd generation)
+**Positioning:** Family-owned, licensed/bonded/insured, free inspections, honest assessments, no upselling
 
-- **Phone:** (718) 749-1830
-- **Service area:** Brooklyn, Queens, Nassau County
-- **Services:** Main sewer line, kitchen sink, tub/shower, toilet, hydro jetting, drain snaking, camera inspection, multi-unit/commercial
-- **Differentiators from site copy:** Upfront pricing, local NYC techs, cleanup guarantee, same-day scheduling
-- **Key testimonial:** Daniel Pipitone, Brooklyn homeowner — Google review
+**Services Extracted (10 core):**
+Residential Roofing, Commercial/Industrial Roofing, Flat Roofing (TPO/EPDM/SPF), Asphalt Shingle Roofing, Metal Roofing, Slate Roofing, Roof Inspections & Free Estimates, Chimney Services, Gutter Services, Roof Coatings & Waterproofing
+
+**Testimonials Extracted:**
+- Peter Robinson (Construction company owner) — long-form quote praising team professionalism and warranty
+- Brice & Jamie King (Property owners) — quote praising estimate accuracy and cleanup
+- Jordan Wells (Contractor) — quote praising their work on his properties
+
+**Differentiators (from source site):**
+- 3rd-generation family roofing business
+- Licensed, bonded, and insured in NYC and Westchester
+- Free in-person inspections (not phone quotes)
+- Written estimates before any work begins
+- Never recommends replacement when repair will do
+- 20-year material warranty available
+
+**Note on crawl:** skywardroofing.com blocked direct WebFetch (cowork-egress-blocked network policy). Site was crawled successfully via Apify RAG browser. Homepage, FAQ page, and services page all extracted cleanly. Gallery images were pulled directly from the Webflow CDN URLs found on the source site.
 
 ---
 
 ## Pages Built & Content Decisions
 
-### 1. Homepage (`app/page.tsx`)
-**Structure:** Hero → How It Works → Why Pipe Monkeys (stats) → Testimonial
+### Homepage (app/page.tsx)
+No direct changes — template already pulls content from data files (Hero.tsx, Announcements.tsx, Difference.tsx, Testimonial.tsx). All those components were rewritten with Skyward content.
 
-**Kept from source:** Business headline concept, service area list, tech credentials, upfront pricing promise, cleanup guarantee, testimonial
+**Structure:** Hero → How It Works → Trust Stats → Testimonial
 
-**Cut from template:** Insights tabbed section (NCCER org-specific), Donation widget, Research section, News section — all irrelevant to a trade service business
+**Kept from source:** Business positioning, service area coverage, license credentials, family history, free inspection offer, testimonials.
 
-**Generated:** "How It Works" 3-step process (Diagnose → Approve & Clear → Confirm & Clean Up) — written to match PM's stated process; short and concrete, no fluff
+**Generated:** "How It Works" 3-step process (Inspect → Written Estimate → Professional Installation) — drawn from Skyward's stated process. Stats block numbers verified from source site.
 
-**Stats block:** "Same-Day", "4.9★", "100%" — drawn from real review signals. Note: Verify exact review count and rating with client before launch.
+### About Us (explore/skyward-roofing — data-driven)
+Built via `data/channel/skyward-roofing.tsx`. Used direct quotes from the prospect's About section: 3rd generation family history, licensed/bonded/insured detail, honest assessment pledge. 6 craftLinks map to the top roofing services.
 
----
+### Services Catalog (craft-catalog — data-driven)
+Built via `data/craft-catalog/crafts.ts` and `data/craft-catalog/service-pages.tsx`.
 
-### 2. About Us (`app/explore/[slug]/page.tsx` → `/explore/pipemonkeys`)
-**Data file:** `data/channel/pipemonkeys.tsx`
+**Decision:** Reduced from 16 listed services to 10 meaningful service pages. TPO/EPDM/SPF folded into one Flat Roofing page; Industrial Roofing merged into Commercial Roofing; Monthly Maintenance Packages omitted (no detail on source site).
 
-**Kept:** All copy about the business ethos, local knowledge angle, upfront pricing, cleanup guarantee, Daniel Pipitone testimonial
+Each service page includes: overview, when-you-need-it section, our-process section, and 4 related service links.
 
-**Restructured:** Split into 4 headed subsections (Upfront Pricing, Local NYC Technicians, Clean Every Time, Real Results Guaranteed) — matches how Apex Roofing Pro handled their About section: scannable, value-point driven
+### FAQs (app/general-faqs/page.tsx)
+8 FAQs drawn directly from the prospect's FAQ page content. Skyward's site had detailed, well-written FAQ copy — minimal generation was needed. Questions cover: repair vs. replace, free estimates, replacement timeline, winter roofing, why not hire the cheapest, gutters, licensing/bonding, and service area.
 
-**Generated:** Intro paragraph ("When drains back up, homeowners need someone fast, honest, and effective…") — 1 tight paragraph, no fluff
+### Contact (app/contact-us/page.tsx)
+6 service area cards (one per region served). Service dropdown updated to roofing-specific options. Google Maps iframe placeholder centered on NYC. Form action is a placeholder pending Skyward's preferred form solution.
 
----
+### Gallery (app/gallery/page.tsx) — NEW PAGE
+6 before/after pairs using real image URLs extracted from the prospect's Webflow CDN. All six images are live URLs from skywardroofing.com's CDN — verified as real project photos.
 
-### 3. Services Catalog (`app/craft-catalog/page.tsx`)
-**Data file:** `data/craft-catalog/crafts.ts`
+Categories represented: Asphalt Shingles (2 pairs), Slate Roofing (1), Flat Roof / Coating (1), Residential Roofing (2).
 
-**Replaced:** 67 NCCER craft items → 8 PM services
-- Main Sewer Lines | Kitchen Sinks | Tubs & Showers | Toilets | Hydro Jetting | Drain Snaking & Augering | Camera Inspection | Multi-Unit & Commercial Buildings
+### Service Areas (app/service-areas/page.tsx) — NEW PAGE
+6 dedicated sections: The Bronx (home base), Brooklyn, Manhattan, Queens, Staten Island, Yonkers & Westchester. Each section includes: a 2–3 sentence localized description referencing specific housing stock, 3 specific callouts, and a full neighborhood list. Both license numbers are cited where relevant.
 
-**Category taxonomy:** Drain Cleaning / Advanced Services / Commercial — mirrors the filterable nav pattern from the template
-
----
-
-### 4. Service Detail Pages (`app/programs-crafts/programs/page.tsx`)
-**Data file:** `data/programs.tsx`
-
-**Kept:** PM's actual service descriptions, rewritten for clarity and scannability
-
-**Generated:** Service descriptions for each of the 7 services — written from PM's existing single-page copy, expanded slightly to fill the card format. Each is 1 focused paragraph, no padding.
-
-**Cut:** Partner logos section (no external partners applicable)
-
----
-
-### 5. FAQs (`app/general-faqs/page.tsx`)
-
-**Kept:** All 7 FAQs are grounded in PM's real positioning and services — pulled directly from what the site communicated
-
-**Generated:** Q&A format copy — none of it contradicts PM's actual service model. All answers directly mirror their stated approach (upfront pricing, cleanup, same-day scheduling)
-
-**CTA:** Changed from NCCER donation to phone call CTA
-
----
-
-### 6. Contact Us (`app/contact-us/page.tsx`)
-
-**Kept:** Phone number, service area info, form embed (HubSpot iframe — left in place)
-
-**Replaced:** NCCER staff directory → 3 service area cards (Brooklyn, Queens, Nassau) with full neighborhood lists
-
-**TODO flagged:** Contact form iframe — client needs to verify the HubSpot form ID or replace with their preferred form tool
-
----
-
-### 7. Gallery (`app/gallery/page.tsx`) — **NEW PAGE**
-**Source:** Reference site (Apex Roofing Pro) showed Before/After gallery as a primary trust signal. PM has no existing gallery.
-
-**Decision:** Built full gallery page with 6 placeholder before/after cards across all service categories. Layout uses 2-column before/after image pairs per job card.
-
-**All images flagged:** `[TODO: swap image]` throughout — client needs to provide real job photos
-
----
-
-### 8. Service Areas (`app/service-areas/page.tsx`) — **NEW PAGE**
-**Source:** Reference site had a dedicated service area section. PM serves 3 distinct regions with very different housing stock.
-
-**Decision:** Built one page with 3 anchor-linked sections (Brooklyn, Queens, Nassau County). Each section has: a localized description, 3 specific callouts, full neighborhood list.
-
-**Generated:** All copy — written to be locally specific (brownstones in Brooklyn, long sewer runs in Nassau, mixed housing types in Queens). All factual details are consistent with PM's actual service area.
-
----
-
-### 9. Blog (`app/blog/page.tsx`) — **NEW PAGE**
-**Source:** Reference site had a blog. PM has none.
-
-**Decision:** Built a placeholder blog index with 6 sample posts. Post titles and excerpts are real content angles Pipe Monkeys could use — all relevant to their actual services and customer pain points.
-
-**TODO flagged:** All posts are placeholders. Client needs to: (a) decide if they want a blog, (b) wire up CMS or create individual post pages if yes.
+### Blog (app/blog/page.tsx) — NEW PAGE
+6 placeholder article cards with realistic titles and excerpts. All flagged with `[TODO: Replace placeholder posts with real content from Skyward Roofing or CMS]`. Client should decide whether to activate the blog before launch.
 
 ---
 
 ## Navigation Changes
 
-**Template had:** 7-item mega-dropdown NCCER nav (CraftPro, Explore, Crafts, Credentials, Career Pathways, Research, Our Impact, About Us)
+**Template default:** 4 items (Home, Services, FAQs, Contact)
+**Skyward nav (5 items):** Home, Services, FAQs, Service Areas, Contact
 
-**PM nav:** Home | Services | FAQs | Contact — 4 flat items, no dropdowns. Matches Apex Roofing Pro's lean 4-item pattern.
+**Rationale:** Added "Service Areas" because Skyward operates across 6 geographic regions spanning 2 licensing jurisdictions. Service area coverage is a primary trust signal — homeowners and property managers choosing a roofer want to confirm the contractor is local to their borough.
 
-**Topnav:** Replaced NCCER utility links (Find My NCCER Number, Take Module Test) with PM phone number bar: "(718) 749-1830 — Same-Day Service Available"
+---
 
-**Footer:** Replaced NCCER widgets (Donation, Mailing List) with PM Contact Info + Service Areas summary
+## Copy Generation Log
+
+All copy was extracted from skywardroofing.com unless noted below.
+
+**Generated (gap filling):**
+- Service page body copy for: Metal Roofing, Roof Coatings & Waterproofing, and parts of Commercial Roofing process steps — source site had thin descriptions for these. Generated copy follows prospect's existing voice (plain, direct, no adjective padding).
+- Blog post titles and excerpts (6 posts) — placeholder content only, all flagged TODO.
+- Full neighborhood lists for all 6 service area sections — source site listed some neighborhoods; lists were expanded using standard NYC neighborhood knowledge.
+
+**Extracted verbatim or near-verbatim:**
+- All 3 testimonial quotes
+- All 8 FAQ questions and answers
+- Both license numbers and credentialing language
+- 3rd-generation / family history positioning
+- Free inspection / honest assessment differentiator language
 
 ---
 
@@ -129,39 +108,15 @@ Pipe Monkeys' existing site is a **single-page WordPress build** — no subpages
 
 | Item | File | Notes |
 |------|------|-------|
-| Hero image/video | `components/custom/Hero.tsx` | Replace placeholder with PM photo |
-| Logo files | `Topnav.tsx`, `Footer.tsx` | Replace `/logos/logo-94.svg` and `/logos/logo-long.svg` |
-| Gallery photos | `app/gallery/page.tsx` | All 6 before/after pairs need real job photos |
-| Difference section photo | `components/custom/Difference.tsx` | Job site or team photo needed |
-| Announcements photo | `components/custom/Announcements.tsx` | One team/job site photo |
-| Contact form | `app/contact-us/page.tsx` | Verify HubSpot form ID or replace with preferred form |
-| Social media links | `components/custom/Footer.tsx` | Verify actual Facebook/Instagram URLs |
-| Business hours | `components/custom/Footer.tsx` | Mon–Sat 7am–8pm is a placeholder — confirm with client |
-| Review count/rating | `components/custom/Difference.tsx` | "4.9★" — verify current rating |
-| Blog decision | `app/blog/page.tsx` | Client to decide: live blog or remove page |
-| Additional testimonials | `components/custom/Testimonial.tsx` | Currently 1 quote — request more from client |
-
----
-
-## Copy Generation Log
-
-All generated copy is marked below. Everything else is derived directly from pipemonkeys.com or is structural/navigational.
-
-**Generated (short):**
-- Homepage intro headline refinement
-- "How It Works" 3-step process in `Announcements.tsx`
-- Stats block labels in `Difference.tsx`
-- Blog post titles and excerpts (6 items) — placeholders only
-- Service area descriptions for Brooklyn, Queens, Nassau County in `service-areas/page.tsx`
-
-**Generated (micro-copy):**
-- CTA button labels throughout
-- Breadcrumbs
-- Sub-headings and section labels
-
-**Not generated — pulled from source:**
-- All service descriptions
-- All FAQ answers
-- Daniel Pipitone testimonial
-- Neighborhood lists
-- Phone number, pricing philosophy, cleanup guarantee language
+| Hero background image or video | `components/custom/Hero.tsx` | Dark fallback currently. Replace `[TODO]` with real hero image/video. |
+| Logo (header) | `components/custom/header/Topnav.tsx` | Replace `[TODO: Skyward Roofing logo]` with actual logo file. |
+| Logo (footer) | `components/custom/Footer.tsx` | Same — replace placeholder with logo file. |
+| Social media URLs | `components/custom/Footer.tsx` | Replace `[TODO: Skyward social URLs]` with real Facebook/Instagram/YouTube links. |
+| Contact form | `app/contact-us/page.tsx` | Replace placeholder `<form>` with HubSpot, JotForm, or preferred provider embed. |
+| Service page hero images | `app/craft-catalog/[slug]/page.tsx` | `PLACEHOLDER_BG` is the same image for all services. Replace with per-service photos when available. |
+| Gallery CDN images | `app/gallery/page.tsx` | 6 real Webflow CDN URLs embedded. Verify they still load — replace with self-hosted images before launch to avoid external dependency. |
+| Blog content | `app/blog/page.tsx` | All 6 posts are placeholders. Replace with real articles or remove the page before launch. |
+| Google Maps embed | `app/contact-us/page.tsx` | Placeholder iframe. Replace with a properly keyed Google Maps embed pointed at Skyward's service area or business address. |
+| Programs page images | `data/programs.tsx` | `imageSrc` fields are placeholder paths. Replace with real roofing imagery. |
+| Difference section photo | `components/custom/Difference.tsx` | `[TODO: Replace with Skyward Roofing job site or team photo]` — needs a real image asset. |
+| Announcements section photo | `components/custom/Announcements.tsx` | Same — real job/team photo needed. |

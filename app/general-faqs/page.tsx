@@ -12,58 +12,97 @@ interface FaqItem {
 
 const faqItems: FaqItem[] = [
   {
-    title: "How quickly can you get here?",
+    title: "How do I know if I need a roof replacement or if a repair will do?",
     content: (
       <p>
-        Most calls are scheduled the same day, and we offer near-instant
-        response for urgent clogs. Timing depends on your exact neighborhood,
-        but we move fast. Call us at{" "}
-        <a href="tel:7187491830" className="ia-link">(718) 749-1830</a>{" "}
-        and we&apos;ll give you an accurate ETA on the spot.
+        If your roof is over 15 years old and shingles look rough — visible
+        cracking, breaking, or balding where ceramic granules are missing —
+        or if your flat roof&apos;s membrane has significant UV damage and
+        compromised seals, or you&apos;re experiencing several leaks, chances
+        are the roofing needs to be replaced. We recommend a free inspection
+        so we can assess whether a repair could give you a few more years, or
+        if it&apos;s smarter economically to replace it. We never suggest a
+        replacement when a repair will do — and we&apos;ll never suggest a
+        repair if the entire roof is actually about to fail.
       </p>
     ),
   },
   {
-    title: "Do you give upfront pricing?",
+    title: "Do you offer free estimates?",
     content: (
       <p>
-        Always. We diagnose the issue, explain the solution, and give you the
-        price before any work starts. No surprises, no upsell games. What we
-        quote is what you pay — period.
+        Yes — 100% free estimates, always. We send an experienced estimator
+        to your property to conduct a thorough assessment and provide an
+        accurate written estimate. We take into account the age of the roof,
+        your budget, and what will be most cost-effective in the long run.
+        Call us at{" "}
+        <a href="tel:9179798704" className="ia-link">(917) 979-8704</a>{" "}
+        or fill out the contact form to schedule.
       </p>
     ),
   },
   {
-    title: "What tools do you use to clear drains?",
+    title: "How long does a roof replacement take?",
     content: (
       <p>
-        We carry professional cutters, snakes, augers, and hydro-jetting
-        equipment on every truck. Your tech will choose the safest and most
-        effective method for your specific line and problem — and explain why
-        before starting.
+        Re-roofing moves quickly with an experienced contractor and
+        well-trained crew — typically 1–3 days for the average 2-story home.
+        Variables that affect timing include weather, whether there is a
+        second old roofing layer to be removed, difficult access, and roof
+        complexity. We&apos;ll give you a realistic timeline estimate before
+        the job starts.
       </p>
     ),
   },
   {
-    title: "When should I consider hydro jetting instead of snaking?",
+    title: "Can roofing be done in winter?",
     content: (
       <p>
-        Snaking clears a path through the clog. Jetting actually scrubs grease,
-        scale, and buildup off the pipe walls — giving you a cleaner line and
-        much longer-lasting results. If you get repeat clogs in the same drain,
-        jetting is usually the right call. We&apos;ll tell you honestly which
-        one makes sense for your situation.
+        The ideal install temperature for asphalt shingles is above 40
+        degrees. Cold-weather-friendly roofing materials like cedar shingles
+        and metal can be installed with little or no heat-sensitive adhesive.
+        We work year-round in NYC and will advise you on timing based on the
+        material you&apos;re using.
       </p>
     ),
   },
   {
-    title: "Do you service apartments and multi-unit buildings?",
+    title: "Why shouldn't I just hire the cheapest contractor?",
     content: (
       <p>
-        All the time. We work with brownstones, pre-war buildings, walk-ups,
-        condos, co-ops, and multi-family homes across Brooklyn, Queens, and
-        Nassau County every day. We coordinate with building managers and work
-        to minimize disruption to other tenants.
+        A roof is a system — not just shingles. It includes waterproofing
+        underlayment (ice shield), water-resistant felt, ventilation, flashings,
+        and drip edge. Even the best shingles will fail early if any component
+        is poorly installed. You can easily verify material quality, but
+        it&apos;s harder to verify installation quality — until the roof fails
+        years later, when the contractor may be long gone. Our estimates
+        always cover quality underlayment, new flashings, new drip edge, and
+        the proper nail count per shingle.
+      </p>
+    ),
+  },
+  {
+    title: "Will I need to redo the gutters at the same time as the roof?",
+    content: (
+      <p>
+        If the gutters and downspouts are in good shape, we can work around
+        them without causing any damage. If the gutters need repairs, we can
+        handle that as well. We&apos;ll let you know during the inspection if
+        anything needs attention.
+      </p>
+    ),
+  },
+  {
+    title: "Are you licensed and insured in New York?",
+    content: (
+      <p>
+        Yes. We are licensed, bonded, and insured in the state of New York.
+        Our NYC license number is 2100010-DCA and our Westchester County
+        license number is WC-36220-H23. Being licensed requires passing tests
+        and proving formal training or experience. Being bonded means funds
+        are secured in case of a dispute. Being insured means if a worker is
+        injured on your property, they apply to our company for
+        compensation — not your homeowner&apos;s insurance.
       </p>
     ),
   },
@@ -71,37 +110,36 @@ const faqItems: FaqItem[] = [
     title: "What areas do you serve?",
     content: (
       <>
-        <p>We serve all of Brooklyn, Queens, and Nassau County including:</p>
         <p>
-          <strong>Brooklyn:</strong> Williamsburg, Greenpoint, Bushwick,
-          Bed-Stuy, Crown Heights, Park Slope, Sunset Park, Bay Ridge,
-          Bensonhurst, Dyker Heights, Gravesend, Sheepshead Bay, Coney Island
-          and more.
+          We serve all five New York City boroughs plus Yonkers and
+          surrounding areas:
         </p>
         <p>
-          <strong>Queens:</strong> Astoria, LIC, Maspeth, Flushing, Whitestone,
-          Bayside, Forest Hills, Rego Park, Jackson Heights, Elmhurst, Middle
-          Village and more.
+          <strong>Bronx</strong> — all neighborhoods including Riverdale,
+          Pelham Bay, Fordham, Mott Haven, and more.
         </p>
         <p>
-          <strong>Nassau County:</strong> Valley Stream, Elmont, Franklin
-          Square, West Hempstead, Hempstead, Garden City, Mineola, New Hyde
-          Park, Rockville Centre, Oceanside, Freeport, Merrick, Bellmore,
-          Levittown, East Meadow and more.
+          <strong>Brooklyn</strong> — all neighborhoods including Bay Ridge,
+          Flatbush, Brownsville, Park Slope, Sheepshead Bay, and more.
+        </p>
+        <p>
+          <strong>Manhattan</strong> — all neighborhoods from Inwood to
+          Battery Park.
+        </p>
+        <p>
+          <strong>Queens</strong> — all neighborhoods including Astoria,
+          Flushing, Jamaica, Bayside, Forest Hills, and more.
+        </p>
+        <p>
+          <strong>Staten Island</strong> — all neighborhoods.
+        </p>
+        <p>
+          <strong>Yonkers &amp; surrounding Westchester</strong> — and parts
+          of New Jersey including Hoboken and Jersey City.
         </p>
       </>
     ),
-  },
-  {
-    title: "Do you clean up after the job?",
-    content: (
-      <p>
-        Yes — always. Every tech wears shoe covers, lays down drop cloths, and
-        cleans the workspace before leaving. We test the flow, show you the
-        results, and make sure your home is cleaner than we found it. That
-        &apos;s not a bonus — it&apos;s standard.
-      </p>
-    ),
+    link: { label: "See Full Service Area", href: "/service-areas" },
   },
 ];
 
@@ -197,16 +235,17 @@ export default function GeneralFaqsPage() {
             <div className={`front-donation__in wow fadeInUpS${donationInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
               <div className="content-entry">
                 <p>
-                  Call us at <strong>(718) 749-1830</strong> — our team picks up fast
-                  and can answer any question, schedule a same-day visit, or give you
-                  an honest assessment over the phone.
+                  Call us at <strong>(917) 979-8704</strong> — a member of
+                  our team picks up and can answer any question, schedule a
+                  free inspection, or give you an honest assessment over the
+                  phone.
                 </p>
               </div>
               <div className="front-donation__btn-wrap">
                 <div className="front-donation__btn">
                   <SecondaryButton
-                    label="Call (718) 749-1830"
-                    href="tel:7187491830"
+                    label="Call (917) 979-8704"
+                    href="tel:9179798704"
                   />
                 </div>
               </div>

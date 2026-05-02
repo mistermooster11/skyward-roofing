@@ -12,8 +12,9 @@ const quickLinks = [
 ];
 
 const socials = [
-  { icon: "icon-facebook",   href: "https://www.facebook.com/pipemonkeys",  label: "Facebook"  },
-  { icon: "icon-instagram",  href: "https://www.instagram.com/pipemonkeys", label: "Instagram" },
+  // [TODO: Add Skyward Roofing Facebook and Instagram URLs when available]
+  { icon: "icon-facebook",   href: "https://www.facebook.com/skywardroofing",  label: "Facebook"  },
+  { icon: "icon-instagram",  href: "https://www.instagram.com/skywardroofing", label: "Instagram" },
 ];
 
 export default function Footer() {
@@ -30,11 +31,11 @@ export default function Footer() {
         {/* Logo */}
         <div className={`footer__logo fadeInUpS wow${vis}`}>
           <a href="/">
-            <span className="sr-only">Pipe Monkeys</span>
-            {/* [TODO: Replace with Pipe Monkeys logo] */}
+            <span className="sr-only">Skyward Roofing</span>
+            {/* [TODO: Replace with Skyward Roofing logo] */}
             <img
               src="/logos/logo-long.svg"
-              alt="Pipe Monkeys Drain & Sewer"
+              alt="Skyward Roofing — NYC Roofing Contractor"
               width="220"
               height="48"
             />
@@ -66,14 +67,15 @@ export default function Footer() {
             <h3 className="footer__heading">Contact Us</h3>
             <div className="content-entry">
               <p>
-                <strong>(718) 749-1830</strong><br />
-                Brooklyn, Queens &amp; Nassau County<br />
-                {/* [TODO: Add business hours] */}
-                Mon–Sat: 7am–8pm &bull; Sun: Emergency Only
+                <strong>(917) 979-8704</strong><br />
+                Bronx, Brooklyn, Manhattan, Queens,<br />
+                Staten Island &amp; Yonkers<br />
+                {/* [TODO: Confirm Skyward Roofing business hours] */}
+                Mon–Sat: 8am–6pm &bull; Sun: By Appointment
               </p>
             </div>
             <a
-              href="tel:7187491830"
+              href="tel:9179798704"
               className={`ia-link ia-link--arrow ia-link--white wow${vis}`}
             >
               <i className="icon-arrow-right ia-orange" />
@@ -89,9 +91,9 @@ export default function Footer() {
             <h3 className="footer__heading">Service Areas</h3>
             <div className="content-entry">
               <p>
-                Brooklyn &bull; Queens &bull; Nassau County<br />
-                All neighborhoods — if you&apos;re not sure,
-                just call. We almost certainly cover your area.
+                Bronx &bull; Brooklyn &bull; Manhattan &bull; Queens<br />
+                Staten Island &bull; Yonkers &bull; and surrounding areas.<br />
+                Not sure if we cover you? Just call — we almost certainly do.
               </p>
             </div>
             <a
@@ -111,7 +113,7 @@ export default function Footer() {
         <div className={`footer__bottom cleared fadeInUpS wow${vis}`}>
 
           <div className="footer__bottom__left">
-            &copy;2026 Pipe Monkeys. All rights reserved.
+            &copy;2026 Skyward Roofing. All rights reserved. NYC License: 2100010-DCA
           </div>
 
           <div className="footer__bottom__center">

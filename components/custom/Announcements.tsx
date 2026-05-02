@@ -28,7 +28,7 @@ export default function Announcements() {
 
         <div className="front-announcements__inner">
           <div className="sub-heading">How It Works</div>
-          <h3 className="h3">Fast, Clean, and Priced Up Front</h3>
+          <h3 className="h3">Free Inspection. Written Estimate. No Surprises.</h3>
         </div>
 
         <div className="relative z-20 front-announcements__content">
@@ -49,7 +49,7 @@ export default function Announcements() {
                   backgroundColor: '#101d2b',
                 }}
               />
-              {/* [TODO: Replace with Pipe Monkeys team or job site photo] */}
+              {/* [TODO: Replace with a Skyward Roofing crew or job site photo] */}
             </div>
           </div>
 
@@ -57,29 +57,35 @@ export default function Announcements() {
           <div className="front-announcements__text">
             <div className="content-entry">
               <p>
-                Every call starts the same way: we show up, diagnose the problem in front
-                of you, explain exactly what needs to happen, and give you the price before
-                a single tool touches your drain. No guessing, no surprise invoices — just
-                a straight answer and a plan.
+                Every job starts the same way: an experienced estimator comes
+                to your property, inspects the roof thoroughly, and explains
+                exactly what&apos;s going on — before any work begins. We
+                discuss all your options and give you a detailed written
+                estimate. No pressure, no obligation.
               </p>
               <p>
-                <strong>Step 1: Diagnose.</strong> Our tech assesses the blockage and
-                identifies the right tool for the job — snake, auger, or hydro jet.
+                <strong>Step 1: Free Inspection.</strong> A senior team member
+                assesses the full roof system — shingles, membrane, flashings,
+                gutters, chimney, interior signs of water damage. We document
+                everything with photos.
               </p>
               <p>
-                <strong>Step 2: Approve &amp; Clear.</strong> You get the price first.
-                Once you&apos;re ready, we go to work. Most jobs are done in under an hour.
+                <strong>Step 2: Written Estimate.</strong> We present all
+                options — repair vs. replacement, material choices, cost
+                ranges — so you can make an informed decision on your timeline
+                and budget.
               </p>
               <p>
-                <strong>Step 3: Confirm &amp; Clean Up.</strong> We test the flow in front
-                of you, clean the work area, and don&apos;t leave until the drain is
-                fully clear.
+                <strong>Step 3: Professional Installation.</strong> Our trained
+                crews install every system the right way. Quality underlayment,
+                proper flashings, correct fastener counts — no shortcuts, no
+                day laborers.
               </p>
             </div>
 
             <SecondaryButton
               href="/contact-us"
-              label="Schedule Service"
+              label="Schedule Free Inspection"
               wow
               style={{ marginTop: '2.5rem' }}
             />

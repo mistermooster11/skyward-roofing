@@ -7,46 +7,88 @@ import { useInView } from "framer-motion";
 
 const areas = [
   {
-    slug: "brooklyn",
-    region: "Brooklyn",
-    headline: "Drain & Sewer Specialists in Brooklyn",
+    slug: "bronx",
+    region: "The Bronx",
+    headline: "Roofing Contractor in the Bronx, NY",
     description:
-      "Brooklyn has some of the oldest plumbing infrastructure in New York — pre-war pipe systems, clay drain lines in brownstones, and cast iron stacks in walk-ups that have been running for 80+ years. Our techs know exactly what to expect when they pull up to a building in Park Slope vs. Bay Ridge, and they arrive with the right equipment the first time.",
+      "The Bronx is home base for Skyward Roofing. We've been working in this borough for decades, and our crews know its building stock inside and out — from attached row houses and pre-war multi-families in Fordham and Tremont to larger commercial and industrial roofs near the waterfront. Whether you need a shingle replacement, a flat roof repair, or a full commercial re-roof, we're the closest qualified crew you can call.",
     callouts: [
-      "Brownstone & pre-war walk-up specialists",
-      "Stack drain issues in multi-family buildings",
-      "Same-day service, all neighborhoods",
+      "Residential and commercial roofing across all Bronx neighborhoods",
+      "Free inspections — in-person estimates, not phone quotes",
+      "Licensed in NYC (DCA: 2100010) and Westchester (WC-36220-H23)",
     ],
     neighborhoods:
-      "Williamsburg • Greenpoint • Bushwick • Bed-Stuy • Crown Heights • Park Slope • Sunset Park • Bay Ridge • Bensonhurst • Dyker Heights • Gravesend • Sheepshead Bay • Coney Island • Flatbush • Canarsie • East New York & More",
+      "Riverdale • Fieldston • Spuyten Duyvil • Kingsbridge • Fordham • Belmont • Tremont • Mott Haven • Hunts Point • Longwood • Morrisania • Concourse • Highbridge • University Heights • Pelham Bay • Co-op City • Throggs Neck • City Island • Parkchester • Van Nest • Morris Park • and more",
+  },
+  {
+    slug: "brooklyn",
+    region: "Brooklyn",
+    headline: "Roofing Contractor in Brooklyn, NY",
+    description:
+      "Brooklyn's roofing landscape is one of the most varied in New York — brownstones with original slate and modified bitumen flat roofs in Park Slope, asphalt shingle colonials in Bay Ridge, commercial flat roofs throughout the industrial corridors of Sunset Park, and everything in between. Our team has worked on all of it and knows what each neighborhood demands.",
+    callouts: [
+      "Brownstone and row house specialists — flat and pitched",
+      "Shingle, slate, TPO, EPDM, and SPF systems installed and repaired",
+      "Free inspections throughout all Brooklyn neighborhoods",
+    ],
+    neighborhoods:
+      "Bay Ridge • Dyker Heights • Bensonhurst • Sunset Park • Park Slope • Gowanus • Red Hook • Carroll Gardens • Cobble Hill • Brooklyn Heights • DUMBO • Downtown Brooklyn • Fort Greene • Clinton Hill • Bed-Stuy • Crown Heights • Flatbush • Ditmas Park • Kensington • Borough Park • Boro Park • Brownsville • East New York • Canarsie • Sheepshead Bay • Gravesend • Coney Island • Brighton Beach • and more",
+  },
+  {
+    slug: "manhattan",
+    region: "Manhattan",
+    headline: "Roofing Contractor in Manhattan, NY",
+    description:
+      "Manhattan roofing ranges from historic brownstones and co-op buildings on the Upper West Side to large flat commercial rooftops in Midtown and FiDi. We hold the necessary NYC licenses to work throughout the borough and have completed projects from Inwood to Battery Park. Personal service, honest estimates — you always talk directly with our team.",
+    callouts: [
+      "Full NYC DCA license — qualified for all Manhattan roofing projects",
+      "Residential brownstones, co-ops, and commercial buildings",
+      "Free inspections and written estimates across the borough",
+    ],
+    neighborhoods:
+      "Inwood • Washington Heights • Hamilton Heights • Harlem • East Harlem • Morningside Heights • Upper West Side • Upper East Side • Yorkville • Lenox Hill • Carnegie Hill • Midtown • Hell's Kitchen • Chelsea • Gramercy • Murray Hill • East Village • West Village • SoHo • TriBeCa • Financial District • Battery Park • and more",
   },
   {
     slug: "queens",
     region: "Queens",
-    headline: "Drain & Sewer Specialists in Queens",
+    headline: "Roofing Contractor in Queens, NY",
     description:
-      "Queens covers one of the widest mixes of home types in the entire city — from single-family houses in Whitestone and Bayside to dense apartment buildings in Astoria and Flushing. Our team handles everything from slow kitchen drains in a LIC condo to main line backups in a multi-unit Jackson Heights walk-up.",
+      "Queens is the largest borough by area and covers every type of housing — single-family homes in Bayside and Whitestone with pitched asphalt shingle roofs, dense apartment buildings in Astoria and LIC, and commercial corridors throughout Flushing and Jamaica. Our team handles the full range of Queens roofing needs with the same free inspection, written estimate, and quality installation process.",
     callouts: [
-      "Single-family homes to large apartment buildings",
-      "Grease line clearing for restaurants & commercial kitchens",
-      "Emergency same-day response across all of Queens",
+      "Single-family homes to large apartment and commercial buildings",
+      "All roof types: shingle, slate, flat membranes, metal",
+      "Free inspections throughout all of Queens",
     ],
     neighborhoods:
-      "Astoria • LIC • Maspeth • Flushing • Whitestone • Bayside • Forest Hills • Rego Park • Jackson Heights • Elmhurst • Middle Village • Ridgewood • Woodside • Sunnyside • Jamaica • Howard Beach & More",
+      "Astoria • Long Island City • Flushing • Bayside • Whitestone • College Point • Elmhurst • Jackson Heights • Woodside • Sunnyside • Forest Hills • Rego Park • Kew Gardens • Richmond Hill • Jamaica • Howard Beach • Ozone Park • Ridgewood • Middle Village • Maspeth • Fresh Meadows • Hollis • Springfield Gardens • Far Rockaway • and more",
   },
   {
-    slug: "nassau-county",
-    region: "Nassau County",
-    headline: "Drain & Sewer Specialists in Nassau County",
+    slug: "staten-island",
+    region: "Staten Island",
+    headline: "Roofing Contractor in Staten Island, NY",
     description:
-      "Nassau County homes sit on longer sewer runs than most NYC properties, and mature tree root systems along those lines are one of the leading causes of main line backups. Our technicians understand how Nassau systems are laid out, where clogs typically form, and how to clear them without damaging the pipe.",
+      "Staten Island has one of the highest concentrations of single-family homes in New York City, with pitched roofs across the borough — asphalt shingles, slate, and tile are all common depending on the neighborhood and era of construction. We offer full residential and commercial roofing services throughout Staten Island with the same free inspection and no-obligation estimate process.",
     callouts: [
-      "Root intrusion specialists for Nassau main lines",
-      "Hydro jetting for long sewer runs",
-      "Local techs — not dispatched from far away",
+      "Residential specialists for Staten Island's single-family home market",
+      "Asphalt shingle, slate, and tile roofing — repairs and replacements",
+      "Free inspections across all Staten Island neighborhoods",
     ],
     neighborhoods:
-      "Valley Stream • Elmont • Franklin Square • West Hempstead • Hempstead • Garden City • Mineola • New Hyde Park • Floral Park • Rockville Centre • Oceanside • Baldwin • Freeport • Merrick • Bellmore • Wantagh • Seaford • Massapequa • Levittown • East Meadow • Uniondale • Lynbrook • Malverne • Hewlett & More",
+      "St. George • New Brighton • Stapleton • Tompkinsville • Clifton • Rosebank • Port Richmond • Mariners Harbor • Howland Hook • Westerleigh • Castleton Corners • New Springville • Willowbrook • Eltingville • Great Kills • Annadale • Huguenot • Tottenville • Richmond • New Dorp • Oakwood • and more",
+  },
+  {
+    slug: "yonkers",
+    region: "Yonkers & Westchester",
+    headline: "Roofing Contractor in Yonkers & Westchester County",
+    description:
+      "Skyward Roofing holds a Westchester County contractor license (WC-36220-H23) and serves Yonkers and the surrounding Westchester area for all residential and commercial roofing needs. Whether you have a single-family home in Yonkers or a commercial property in Eastchester, we bring the same expertise and personal service we provide throughout New York City.",
+    callouts: [
+      "Licensed in Westchester County — WC-36220-H23",
+      "Residential and commercial roofing, all types",
+      "Free inspections and written estimates throughout the area",
+    ],
+    neighborhoods:
+      "Yonkers • Eastchester • Tuckahoe • Bronxville • Mount Vernon • New Rochelle • Pelham • Pelham Manor • Larchmont • Mamaroneck • and surrounding Westchester communities",
   },
 ];
 
@@ -83,7 +125,7 @@ function AreaSection({ area, reversed }: { area: typeof areas[number]; reversed:
             </p>
             <p>
               Not sure if we cover your street?{" "}
-              <a href="tel:7187491830" className="ia-link">Call (718) 749-1830</a>{" "}
+              <a href="tel:9179798704" className="ia-link">Call (917) 979-8704</a>{" "}
               — we almost certainly do.
             </p>
           </div>
@@ -116,7 +158,7 @@ export default function ServiceAreasPage() {
               <span className="post post-page current-item">Service Areas</span>
             </div>
             <h1 className={`ia-white ia-margin-0 fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
-              We Come to You
+              Serving All of New York City
             </h1>
           </div>
         </div>
@@ -127,9 +169,11 @@ export default function ServiceAreasPage() {
               <div className={`sub-heading fadeInUpS wow${heroVis}`}>Coverage Area</div>
               <div className={`content-entry fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
                 <p>
-                  Pipe Monkeys serves all of Brooklyn, Queens, and Nassau County. We don&apos;t
-                  subcontract — our own techs cover every neighborhood, every day, seven days a week.
-                  Same-day scheduling is available across our entire service area.
+                  Skyward Roofing serves all five NYC boroughs, Yonkers, and
+                  surrounding Westchester communities. We are licensed in New
+                  York City (DCA: 2100010-DCA) and Westchester County
+                  (WC-36220-H23). Free inspections and estimates throughout our
+                  entire service area — no obligation.
                 </p>
               </div>
             </div>
@@ -147,10 +191,10 @@ export default function ServiceAreasPage() {
                     </a>
                   </li>
                 ))}
-                <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.4s" }}>
-                  <a className="ia-link ia-link--arrow" href="tel:7187491830">
+                <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.8s" }}>
+                  <a className="ia-link ia-link--arrow" href="tel:9179798704">
                     <i className="icon-link" />
-                    <span>Call (718) 749-1830</span>
+                    <span>Call (917) 979-8704</span>
                   </a>
                 </li>
               </ul>
@@ -179,14 +223,15 @@ export default function ServiceAreasPage() {
           <div className={`front-donation__in wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
             <div className="content-entry">
               <p>
-                Our dispatch is fast and our coverage is wide. Call <strong>(718) 749-1830</strong> and
-                we&apos;ll confirm in 30 seconds and get you on the schedule the same day.
+                Our coverage is wide and our scheduling is fast. Call{" "}
+                <strong>(917) 979-8704</strong> and we&apos;ll confirm in
+                seconds and get you on the schedule for a free inspection.
               </p>
             </div>
             <div className="front-donation__btn-wrap">
               <div className="front-donation__btn">
-                <a className="btn btn--primary" href="tel:7187491830">
-                  Call (718) 749-1830
+                <a className="btn btn--primary" href="tel:9179798704">
+                  Call (917) 979-8704
                 </a>
               </div>
             </div>
