@@ -2,6 +2,7 @@ export type MainNavItem = {
   label: string;
   href?: string | null;
   external?: boolean;
+  dropdown?: { label: string; href: string }[];
 };
 
 export const mainNavItems: MainNavItem[] = [
