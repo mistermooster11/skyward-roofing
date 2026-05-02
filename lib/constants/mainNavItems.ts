@@ -1,8 +1,21 @@
+export type NavDropdownLink = {
+  label: string;
+  href: string;
+  external?: boolean;
+};
+
+export type NavDropdown = {
+  title: string;
+  titleHref: string;
+  links: NavDropdownLink[];
+  quickLinks?: NavDropdownLink[];
+};
+
 export type MainNavItem = {
   label: string;
   href?: string | null;
   external?: boolean;
-  dropdown?: { label: string; href: string }[];
+  dropdown?: NavDropdown;
 };
 
 export const mainNavItems: MainNavItem[] = [
