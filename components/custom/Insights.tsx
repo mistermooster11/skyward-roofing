@@ -50,13 +50,13 @@ export default function Insights() {
 
           {/* HEAD */}
           <div className="front-insights__head py-0 md:py-50">
-            <div className="sub-heading sub-heading__white">Insights</div>
-            <h2 className="h3 ia-white">Resources For Organizations</h2>
+            <div className="sub-heading sub-heading__white">Our Services</div>
+            <h2 className="h3 ia-white">What We Do — Step by Step</h2>
             <div className="content-entry ia-white max-w-2xl">
               <p className="ia-white">
-                NCCER is committed to serving organizations of all sizes by providing rigorous and relevant
-                construction education and workforce development solutions. Click an organization type below
-                to quickly access useful resources for your programs.
+                Every Skyward Roofing job follows the same process: free inspection, written estimate,
+                professional installation, and a final walkthrough before we leave. Select a service
+                below to see exactly how we handle it.
               </p>
             </div>
           </div>
