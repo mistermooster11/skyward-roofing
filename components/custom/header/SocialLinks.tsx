@@ -3,18 +3,22 @@ import { ExternalLink } from 'lucide-react';
 
 const socialLinks = [
   {
-    label: 'Donate',
-    href: 'https://secure.givelively.org/donate/national-center-for-construction-education-research/build-america-change-lives',
+    label: 'Facebook',
+    // [TODO: Replace with Skyward Roofing's actual Facebook page URL]
+    href: 'https://www.facebook.com/skywardroofing',
+    external: true,
     filled: false,
   },
   {
-    label: 'Support',
-    href: 'https://tracker.pardot.nccer.org/l/961192/2024-03-22/5hfvt',
+    label: 'Schedule Service',
+    href: '/contact-us',
+    external: false,
     filled: false,
   },
   {
-    label: 'Sign In',
-    href: 'https://web.myaccount.nccer.org/',
+    label: 'Call Us',
+    href: 'tel:9179798704',
+    external: false,
     filled: true,
   },
 ];
@@ -44,8 +48,8 @@ export default function SocialLinks({ layout = 'row', onClick }: SocialLinksProp
         >
           <Link
             href={s.href}
-            target="_blank"
-            rel="noopener"
+            target={s.external ? '_blank' : '_self'}
+            rel={s.external ? 'noopener noreferrer' : undefined}
             onClick={onClick}
             className={[
               'text-4xl! md:text-xl! inline-flex items-center gap-2',
