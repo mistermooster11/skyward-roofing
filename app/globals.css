@@ -2,21 +2,21 @@
 @source not "../docs/**";
 
 @theme inline {
-  --color-brand-orange: #fd6a3c;
-  --color-brand-navy: #172535; /* rgb(23, 37, 53) */
-  --color-brand-sky: #a1c5d3;
-  --color-brand-blue: #3f5e9d;
-  --color-brand-gray: #f2f2f2;
+  --color-brand-orange: #F4C345;
+  --color-brand-navy: #266DAE; /* rgb(23, 37, 53) */
+  --color-brand-sky: #266DAE;
+  --color-brand-blue: #266DAE;
+  --color-brand-gray: #F0F0F0;
   --font-sans: var(--font-poppins), "Poppins", sans-serif;
 }
 
 @layer base {
   :root {
-    --c-orange: #fd6a3c;
-    --c-navy: #172535;
-    --c-sky: #a1c5d3;
-    --c-blue: #3f5e9d;
-    --c-gray: #f2f2f2;
+    --c-orange: #F4C345;
+    --c-navy: #266DAE;
+    --c-sky: #266DAE;
+    --c-blue: #266DAE;
+    --c-gray: #F0F0F0;
     --c-border: #a5a5a5;
     --scroll-width: 0px;
     font-size: 62.5%;
@@ -29,7 +29,7 @@
   body {
     font-size: 1.6rem;
     font-family: "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
-    color: var(--c-navy);
+    color: #252525;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
