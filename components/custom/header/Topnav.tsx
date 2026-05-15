@@ -36,7 +36,7 @@ const Topnav = ({ onMobileMenuClick }: TopnavProps) => {
                     </div>
                     <button
                         onClick={onMobileMenuClick}
-                        className="lg:hidden flex items-center justify-center ml-[1.3rem] bg-transparent border-0 cursor-pointer text-white p-[0.4rem]"
+                        className="lg:hidden flex items-center justify-center ml-[1.3rem] bg-transparent border-0 cursor-pointer text-brand-navy p-[0.4rem]"
                         aria-label="Menu"
                     >
                         <Menu size={30} strokeWidth={2.5} />
