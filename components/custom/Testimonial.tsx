@@ -103,7 +103,7 @@ function ArrowBtn({
       aria-label={dir === "prev" ? "Previous review" : "Next review"}
       style={{
         background: "transparent",
-        border: "1px solid rgba(161,197,211,0.35)",
+        border: "1px solid rgba(38,109,174,0.35)",
         borderRadius: "50%",
         width: "4.4rem",
         height: "4.4rem",
@@ -111,18 +111,18 @@ function ArrowBtn({
         alignItems: "center",
         justifyContent: "center",
         cursor: "pointer",
-        color: "#a1c5d3",
+        color: "#266DAE",
         flexShrink: 0,
         transition: "border-color 0.25s, color 0.25s",
       }}
       onMouseEnter={(e) => {
-        (e.currentTarget as HTMLButtonElement).style.borderColor = "#a1c5d3";
+        (e.currentTarget as HTMLButtonElement).style.borderColor = "#266DAE";
         (e.currentTarget as HTMLButtonElement).style.color = "#fff";
       }}
       onMouseLeave={(e) => {
         (e.currentTarget as HTMLButtonElement).style.borderColor =
-          "rgba(161,197,211,0.35)";
-        (e.currentTarget as HTMLButtonElement).style.color = "#a1c5d3";
+          "rgba(38,109,174,0.35)";
+        (e.currentTarget as HTMLButtonElement).style.color = "#266DAE";
       }}
     >
       {dir === "prev" ? (
@@ -235,7 +235,7 @@ export default function Testimonial() {
                   borderRadius: "50%",
                   border: "none",
                   cursor: "pointer",
-                  background: i === active ? "#a1c5d3" : "rgba(161,197,211,0.3)",
+                  background: i === active ? "#266DAE" : "rgba(38,109,174,0.3)",
                   transition: "background 0.3s",
                   padding: 0,
                 }}

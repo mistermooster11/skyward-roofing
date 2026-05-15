@@ -86,7 +86,7 @@ export default function Hero() {
                   style={{
                     width: '200%',
                     height: '200%',
-                    border: '1px dashed rgba(161,197,211,.2)',
+                    border: '1px dashed rgba(38,109,174,.2)',
                     borderRadius: '50%',
                   }}
                 />
@@ -112,7 +112,7 @@ export default function Hero() {
                 {/* [TODO: Replace with a Skyward Roofing hero photo or video — drone shot of NYC roof work ideal] */}
                 <div
                   className="absolute left-0 top-0 w-full h-full"
-                  style={{ backgroundColor: '#0d1b2a' }}
+                  style={{ backgroundColor: '#1a1a1a' }}
                 />
               </div>
             </div>

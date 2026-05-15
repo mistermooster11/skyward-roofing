@@ -9,7 +9,7 @@ interface TopnavProps {
 
 const Topnav = ({ onMobileMenuClick }: TopnavProps) => {
     return (
-        <div className="bg-[#101d2b] border-b border-[rgba(161,197,211,.3)] w-full">
+        <div className="bg-[#ffffff] border-b border-[rgba(38,109,174,.3)] w-full">
             <div className="inner inner-header flex flex-row items-center justify-between min-h-[4.4rem] p-0">
 
                 {/* Mobile logo */}
@@ -22,7 +22,7 @@ const Topnav = ({ onMobileMenuClick }: TopnavProps) => {
                 <div className="header__left hidden lg:block">
                     <a
                         href="tel:9179798704"
-                        className="flex items-center gap-2 text-brand-sky text-[1.4rem] font-light tracking-[.05rem] py-[2rem] no-underline transition-colors duration-[350ms] hover:text-[#daedf5]"
+                        className="flex items-center gap-2 text-brand-sky text-[1.4rem] font-light tracking-[.05rem] py-[2rem] no-underline transition-colors duration-[350ms] hover:text-[#a0c4e0]"
                     >
                         <Phone size={14} strokeWidth={2} />
                         <span>Same Day Scheduling Available &nbsp;&bull;&nbsp; (917) 979-8704</span>

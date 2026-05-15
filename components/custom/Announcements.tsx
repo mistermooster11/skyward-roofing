@@ -46,7 +46,7 @@ export default function Announcements() {
                   display: 'block',
                   width: '100%',
                   height: '100%',
-                  backgroundColor: '#101d2b',
+                  backgroundColor: '#ffffff',
                 }}
               />
               {/* [TODO: Replace with a Skyward Roofing crew or job site photo] */}
