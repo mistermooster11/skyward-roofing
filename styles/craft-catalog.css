@@ -613,7 +613,7 @@
 /* ── utility color / spacing helpers ─────────────────────── */
 .ia-bg-dark  { background: #266DAE; }
 .ia-bg-soft  { background: #F0F0F0; }
-.ia-bg-sky   { background: #266DAE; }
+.ia-bg-sky   { background: #F0F0F0; }
 .ia-white    { color: #fff !important; }
 .ia-sky      { color: #266DAE !important; }
 .ia-dark     { color: #252525 !important; }
@@ -642,7 +642,7 @@
   content: "";
   position: absolute;
   left: 99%;
-  background: #266DAE;
+  background: #F0F0F0;
   width: 100vw;
   top: 0; bottom: 0;
 }

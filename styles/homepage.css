@@ -73,7 +73,7 @@
 
 /* --- Background / color utilities --- */
 .ia-bg-dark   { background-color: #252525; }
-.ia-bg-sky    { background-color: var(--c-sky); }
+.ia-bg-sky    { background-color: #F0F0F0; }
 .ia-bg-orange { background-color: var(--c-orange); }
 .ia-bg-white  { background-color: #fff; }
 .ia-bg-gray   { background-color: var(--c-gray); }
