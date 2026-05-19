@@ -39,7 +39,7 @@ export default function Announcements() {
               <span
                 style={{
                   backgroundImage:
-                    'url(/images/IMG_9688-1024x682.jpg)',
+                    'url(https://www.skywardroofing.com/uploads/1/1/6/0/116005231/just-finished-roof-skyward-roofing-ny-orig.jpg)',
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: '50% 50%',
                   backgroundSize: 'cover',
@@ -49,7 +49,6 @@ export default function Announcements() {
                   backgroundColor: '#ffffff',
                 }}
               />
-              {/* [TODO: Replace with a Skyward Roofing crew or job site photo] */}
             </div>
           </div>
 

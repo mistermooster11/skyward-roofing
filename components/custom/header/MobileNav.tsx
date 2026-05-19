@@ -37,7 +37,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
         {/* .mobile-navi__head */}
         <div className="relative px-[2.4rem] py-[1rem] flex items-center min-h-[54px] border-b border-[rgba(38,109,174,.3)]">
           <Link href="/" onClick={onClose} aria-label="Skyward Roofing">
-            <img src="/logos/logo-long.svg" alt="Skyward Roofing" className="block h-[3.2rem]" />
+            <img src="/logos/skyward-roofing-logo.png" alt="Skyward Roofing" className="block h-[3.2rem] w-auto object-contain" />
           </Link>
           {/* .mobile-navi__close */}
           <button

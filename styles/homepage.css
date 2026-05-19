@@ -949,7 +949,7 @@
 
 /* Logo */
 .footer__logo { display: block; padding-top: 4.5rem; }
-.footer__logo img { height: 4.8rem; width: auto; }
+.footer__logo img { height: 10rem; width: auto; }
 
 /* Widgets row */
 .footer__widgets {

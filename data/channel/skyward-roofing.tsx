@@ -16,8 +16,7 @@ const skywardRoofing: ChannelPageData = {
     title:           "NYC Roofing Specialists",
     breadcrumbLabel: "About Us",
     imageBg:
-      "url(https://uploads-ssl.webflow.com/uploads/1/1/6/0/116005231/editor/new-york-skyline-skyward-roofing-bronx-ny.jpg) no-repeat center center / cover, #101d2b",
-    // [TODO: Replace hero.imageBg with a high-quality Skyward Roofing job site photo]
+      "url(https://www.skywardroofing.com/uploads/1/1/6/0/116005231/editor/new-york-skyline-skyward-roofing-bronx-ny.jpg) no-repeat center center / cover, #101d2b",
     description: (
       <p>
         Skyward Roofing is a third-generation, family-owned roofing company
@@ -123,8 +122,7 @@ const skywardRoofing: ChannelPageData = {
   },
 
   flexFeature: {
-    imageSrc: "/images/iStock-1220765707-443x559-1.jpg",
-    // [TODO: Replace flexFeature.imageSrc with a Skyward Roofing job photo]
+    imageSrc: "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/img-4442-1.jpeg",
     title:       "Free Roof Inspection — No Obligation",
     body: (
       <p>

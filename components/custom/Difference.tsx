@@ -44,8 +44,7 @@ export default function Difference() {
           {/* Right: photo */}
           <div className="w-full md:w-[54%] shrink-0 relative z-20">
             <div className="front-difference__image">
-              {/* [TODO: Replace with a Skyward Roofing crew or completed job photo] */}
-              <VapeImage src="/images/IMG_9750-1024x683.jpg" />
+              <VapeImage src="https://www.skywardroofing.com/uploads/1/1/6/0/116005231/skyward-rooofing-service-example-nyc-orig_orig.jpg" />
             </div>
           </div>
 

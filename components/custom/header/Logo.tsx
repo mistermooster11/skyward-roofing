@@ -11,7 +11,7 @@ const Logo = ({ isFixed = false, isLoaded = false }: LogoProps) => {
     <div
       className={[
         "overflow-hidden transition-[width,height] duration-350 shrink-0",
-        isFixed ? "w-[150px] h-[38px]" : "w-[200px] h-[80px]",
+        isFixed ? "w-[150px] h-[35px]" : "w-[200px] h-[80px]",
       ].join(" ")}
     >
       <Link
@@ -23,8 +23,8 @@ const Logo = ({ isFixed = false, isLoaded = false }: LogoProps) => {
       >
         <span className="sr-only">Skyward Roofing</span>
         <img
-          className="w-full"
-          src="/logos/logo-large.svg"
+          className="w-full h-full object-contain"
+          src="/logos/skyward-roofing-logo.png"
           alt="Logo of Skyward Roofing"
         />
       </Link>

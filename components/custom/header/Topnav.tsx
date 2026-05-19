@@ -10,12 +10,11 @@ interface TopnavProps {
 const Topnav = ({ onMobileMenuClick }: TopnavProps) => {
     return (
         <div className="bg-[#ffffff] border-b border-[rgba(38,109,174,.3)] w-full">
-            <div className="inner inner-header flex flex-row items-center justify-between min-h-[4.4rem] p-0">
+            <div className="inner inner-header flex flex-row items-center justify-between gap-5 min-h-[4.4rem] p-0">
 
                 {/* Mobile logo */}
                 <Link href="/" className="block lg:hidden float-left" aria-label="Skyward Roofing">
-                    {/* [TODO: Replace with Skyward Roofing logo SVG] */}
-                    <img src="/logos/logo-94.svg" alt="Skyward Roofing" className="block h-[3.6rem]" />
+                    <img src="/logos/skyward-roofing-logo.png" alt="Skyward Roofing" className="block h-[3.6rem] w-auto object-contain" />
                 </Link>
 
                 {/* Left: phone number — desktop only */}

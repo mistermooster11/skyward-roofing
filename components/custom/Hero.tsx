@@ -109,10 +109,14 @@ export default function Hero() {
                   visible ? 'h-full scale-100' : 'h-0 scale-[1.2]',
                 ].join(' ')}
               >
-                {/* [TODO: Replace with a Skyward Roofing hero photo or video — drone shot of NYC roof work ideal] */}
-                <div
-                  className="absolute left-0 top-0 w-full h-full"
-                  style={{ backgroundColor: '#1a1a1a' }}
+                {/* Hero background — Skyward Roofing drone video */}
+                <video
+                  className="absolute left-0 top-0 w-full h-full object-cover"
+                  src="https://www.pexels.com/download/video/14310010/"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                 />
               </div>
             </div>

@@ -5,8 +5,33 @@ import CraftOverview   from "@/components/custom/craft-catalog/CraftOverview";
 import RelatedCrafts   from "@/components/custom/craft-catalog/RelatedCrafts";
 import { servicePages } from "@/data/craft-catalog/service-pages";
 
-// TODO: Replace PLACEHOLDER_BG with a real service photo per slug
-const PLACEHOLDER_BG = "/images/IMG_9688-1024x682.jpg";
+/** Per-service hero background images from skywardroofing.com */
+const SERVICE_HERO_IMAGES: Record<string, string> = {
+  "residential-roofing":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/just-finished-roof-skyward-roofing-ny-orig.jpg",
+  "commercial-roofing":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/commercial-flat-roof-install-skyward-roofing-nyc-orig.jpg",
+  "flat-roofing":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/flat-roofing-service-skyward-roofing-nyc-orig.jpg",
+  "asphalt-shingle-roofing":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/skyward-roofing-service-nyc-orig.jpg",
+  "metal-roofing":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/dji-fly-20250506-141730-527-1746555462466-photo.jpg",
+  "slate-roofing":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/img-4442-1.jpeg",
+  "roof-inspections":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/editor/new-york-skyline-skyward-roofing-bronx-ny.jpg",
+  "chimney-services":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/bobbranton-image2-orig-highqualitymaterialsservice_orig.jpeg",
+  "gutter-services":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/skyward-rooofing-service-example-nyc-orig_orig.jpg",
+  "roof-coatings":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/skywardroofingroofcoatings.png",
+  "waterproofing-basements":
+    "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/commercial-flat-roof-install-skyward-roofing-nyc-orig.jpg",
+};
+const FALLBACK_BG =
+  "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/editor/new-york-skyline-skyward-roofing-bronx-ny.jpg";
 
 /* Pre-render all known service slugs at build time */
 export function generateStaticParams() {
@@ -40,7 +65,7 @@ export default async function ServiceDetailPage({
     <main className="pt-76 max-[1150px]:pt-[6.2rem]">
       <CraftHero
         title={data.title}
-        bgImage={PLACEHOLDER_BG}
+        bgImage={SERVICE_HERO_IMAGES[slug] ?? FALLBACK_BG}
         breadcrumbs={[
           { label: "Services", href: "/craft-catalog" },
           { label: data.title },

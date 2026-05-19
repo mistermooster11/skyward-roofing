@@ -5,7 +5,7 @@ export const accordionItems = [
   {
     id: "accordion-0",
     title: "Residential Roofing",
-    image: "/images/skyward-residential-roofing.jpg",
+    image: "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/just-finished-roof-skyward-roofing-ny-orig.jpg",
     description:
       "From single-family homes to multi-family buildings across all five boroughs, we handle full roof replacements, storm damage repairs, and everything in between — done right the first time.",
     learnHref: "/craft-catalog/residential-roofing",
@@ -19,7 +19,7 @@ export const accordionItems = [
   {
     id: "accordion-1",
     title: "Flat Roofing — TPO, EPDM & SPF",
-    image: "/images/skyward-flat-roofing.jpg",
+    image: "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/flat-roofing-service-skyward-roofing-nyc-orig.jpg",
     description:
       "Flat roofs require specialized systems and skilled installation. We work with TPO, EPDM, and spray polyurethane foam on both residential and commercial properties throughout NYC.",
     learnHref: "/craft-catalog/flat-roofing",
@@ -33,7 +33,7 @@ export const accordionItems = [
   {
     id: "accordion-2",
     title: "Roof Inspections & Free Estimates",
-    image: "/images/skyward-inspection.jpg",
+    image: "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/editor/new-york-skyline-skyward-roofing-bronx-ny.jpg",
     description:
       "Whether you're buying a property, dealing with an insurance claim, or just noticed something off, we provide thorough roof inspections and honest, no-pressure estimates across the NYC metro area.",
     learnHref: "/craft-catalog/roof-inspections",
@@ -47,7 +47,7 @@ export const accordionItems = [
   {
     id: "accordion-3",
     title: "Chimney Services",
-    image: "/images/skyward-chimney.jpg",
+    image: "https://www.skywardroofing.com/uploads/1/1/6/0/116005231/bobbranton-image2-orig-highqualitymaterialsservice_orig.jpeg",
     description:
       "Chimney flashing failures are one of the most common sources of roof leaks in NYC homes. We repair and re-flash chimneys correctly so the fix lasts — not just until the next heavy rain.",
     learnHref: "/craft-catalog/chimney-services",
