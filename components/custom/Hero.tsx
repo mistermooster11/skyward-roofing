@@ -109,14 +109,11 @@ export default function Hero() {
                   visible ? 'h-full scale-100' : 'h-0 scale-[1.2]',
                 ].join(' ')}
               >
-                {/* Hero background — Skyward Roofing drone video */}
-                <video
-                  className="absolute left-0 top-0 w-full h-full object-cover"
-                  src="https://www.pexels.com/download/video/14310010/"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
+                {/* Hero background — Skyward Roofing drone video (Cloudflare Stream) */}
+                <iframe
+                  src="https://customer-ip9lnkk65px0t3ak.cloudflarestream.com/aeefd7b7ece3f1d99cc0ccb9ef1d5056/iframe?autoplay=true&muted=true&loop=true&controls=false&preload=true&fit=contain"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  className="absolute inset-0 w-full h-full border-0 pointer-events-none"
                 />
               </div>
             </div>
